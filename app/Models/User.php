@@ -45,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+
+    public function reservations() {  //ici méthode
+        return this->hasMany(Reservation::class); //relation hasMany reliée au modèle Reersevation qui va utiliser le user_id en clef étrangère
+    }
+
 }
