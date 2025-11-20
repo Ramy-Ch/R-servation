@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Salle extends Model    //ici la classe qui sert de plan où je prévois les actions avec les méthodes (fonctions à l'intérieur de la classe) et les propriétés(variables de l'objet)
 {
     use HasRestApi;
-    protected $resource= SalleResource::class;
     protected $fillable = [   //ici je met protected car je m'assure que le contenu soit accessible uniquement depuis la classe. $fillable est une propriété eloquent pour expliciter quels champs peuvent être remplis
         "nom",
         "activite"    // dans le tableau je n'ai pas mis id ni timestamps qui sont des colonnes sensibles

@@ -8,7 +8,6 @@ class Reservation extends Model
 {
 
      use HasRestApi;
-    protected $resource = ReservationResource::class;
     
     protected $fillable= [  //propriétés 
         "salle_id", // clef etrangère

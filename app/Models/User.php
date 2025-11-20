@@ -11,7 +11,6 @@ class User extends Authenticatable
 {
 
     use HasRestApi;
-    protected $resource= UserResource::class;
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
