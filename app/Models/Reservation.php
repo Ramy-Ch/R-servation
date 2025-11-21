@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Reservation extends Model
 {
 
-     use HasRestApi;
+     use HasRestApi, Searchable;
     
     protected $fillable= [  //propriétés 
         "date_heure" // j'hésite à en faire deux champs séparés
@@ -18,6 +18,13 @@ class Reservation extends Model
 
     public function user() {
         return $this->belongsTo(User::class);
+    }
+    public function toSearchableArray() {
+        return [
+            'salle_id' => $this->salle_id,
+            'debut' => $this->debut,
+            'fin' => $this->fin,
+        ];
     }
 }
 
