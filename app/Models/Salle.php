@@ -3,6 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Scout\Searchable;   
+use Lomkit\Rest\Concerns\HasRestApi;   
+use App\Models\Reservation; 
 
 class Salle extends Model    //ici la classe qui sert de plan où je prévois les actions avec les méthodes (fonctions à l'intérieur de la classe) et les propriétés(variables de l'objet)
 {

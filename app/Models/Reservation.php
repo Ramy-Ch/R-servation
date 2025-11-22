@@ -3,6 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Lomkit\Rest\Concerns\HasRestApi;   
+use Laravel\Scout\Searchable;          
+
+use App\Models\Salle;
+use App\Models\User;    
 
 class Reservation extends Model
 {
