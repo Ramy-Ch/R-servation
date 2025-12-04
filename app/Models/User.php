@@ -10,10 +10,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Reservation; 
-
 class User extends Authenticatable
 {
-
     use HasRestApi;
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable, Searchable;
