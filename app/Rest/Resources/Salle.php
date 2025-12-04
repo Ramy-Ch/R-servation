@@ -36,7 +36,7 @@ class Salle extends Resource
      */
     public function relations(RestRequest $request): array
     {
-        return ["reservations"];
+        return ["reservations"=>\App\Rest\Resources\Salle::class];
     }
 
     /**
