@@ -37,12 +37,10 @@ class Reservation extends Resource
     public function relations(RestRequest $request): array
     {
         return [
-            ["user"=> "belongsTo",
-            "resource" => \App\Rest\Resources\User::class
+            ["user"=>\App\Rest\Resources\User::class
         ],
         [
-            "salle"=> "belongsTo",
-            "ressource"=> \App\Rest\Resources\Salle::class
+            "salle"=>\App\Rest\Resources\Salle::class
         ]
 
         ];

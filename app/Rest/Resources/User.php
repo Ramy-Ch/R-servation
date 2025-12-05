@@ -39,7 +39,7 @@ class User extends Resource
      */
     public function relations(RestRequest $request): array
     {
-        return [];
+        return ["reservations"=>\App\Rest\Resources\Salle::class];
     }
 
     /**

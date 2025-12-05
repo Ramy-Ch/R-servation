@@ -18,7 +18,7 @@ class Reservation extends Model
         "date_heure" // j'hésite à en faire deux champs séparés
     ];
     public function salle() {
-        return $this-> belongsTo(Salle::class);  //ici la relation est belongsTo() et pas hasMany() puisque ce sont des clefs étrangères en relation avec deux autres modèles
+        return $this->belongsTo(Salle::class);  //ici la relation est belongsTo() et pas hasMany() puisque ce sont des clefs étrangères en relation avec deux autres modèles
     }
 
     public function user() {
