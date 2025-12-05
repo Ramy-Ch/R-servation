@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
          $this->call([
             SalleSeeder::class,
             UserSeeder::class,
+            ReservationSeeder::class
         ]);;
     }
 }
